@@ -1,0 +1,589 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微軟正黑體", "黑體";
+}
+
+h2 {
+    font-size: 18px;
+    margin: 25px 0 10px 0px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+img {
+    vertical-align: top;
+}
+
+p{
+    margin: 0;
+}
+
+.HotelPage {
+    width: 368px;
+    max-width: 1200px;
+    margin: auto;
+    /* outline: 1px solid black; */
+    position: relative;
+    top: -35px;
+}
+
+.Banner {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(https://picsum.photos/300/200/?random=10);
+    background-size: cover;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Banner h1 {
+    color: white;
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+.Banner p {
+    display: none;
+}
+
+.Hotel-Search {
+    padding: 0 20px;
+}
+
+.hotel-Search-group {
+    padding: 20px;
+    border-radius: .5em;
+    box-shadow: 0px 5px 10px 5px rgb(215, 215, 215);
+    background-color: white;
+}
+
+.Hotel-Search .hotel-Search-group label {
+    border-radius: .5em;
+    background-color: rgb(225, 225, 225);
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.Hotel-Search .hotel-Search-group p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.Hotel-Search .hotel-Search-group .search-p {
+    font-size: 12px;
+}
+
+.Hotel-Search label:hover {
+    cursor: pointer;
+    background-color: #dbf3ea;
+}
+
+.Hotel-Search label {
+    display: block;
+}
+
+.hotel-search-destination label {
+    color: rgb(115, 115, 115);
+}
+
+.hotel-search-destination p {
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+.Hotel-Search:first-child {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+
+.Hotel-Search p {
+    font-size: 12px;
+    font-weight: 900;
+    color: black;
+}
+
+.Hotel-Search label p:first-child {
+    font-size: 10px;
+    color: gray;
+}
+
+.Hotel-Search .hotel-Search-group input {
+    border: none;
+    width: 100%;
+    color: black;
+    background-color: transparent;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.Hotel-Search .search-btn {
+    width: 100%;
+}
+
+.Hotel-Search .search-btn button {
+    width: 100%;
+    border-radius: .5em;
+    background-color: #029278;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    margin: 10px auto;
+    font-size: 12px;
+}
+
+.Hotel-Search button:hover {
+    cursor: pointer;
+}
+
+.popular-destination {
+    padding: 10px;
+    display: none;
+    border-radius: .5em;
+    box-shadow: 0 1px 1px 1px rgb(150, 150, 150);
+}
+
+.popular-destination ul {
+    list-style: none;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.popular-destination button {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    color: gray;
+    margin: 0 5px;
+}
+
+.number-people {
+    padding-left: 10px;
+    border-radius: .5em;
+    display: none;
+    border-radius: .5em;
+    box-shadow: 0 1px 1px 1px rgb(150, 150, 150);
+}
+
+#room-check,
+#destination-check {
+    display: none;
+}
+
+#room-check:checked~.number-people {
+    display: block;
+}
+
+#destination-check:checked~.popular-destination {
+    display: block;
+}
+
+.number-people .room,
+.aldult,
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding: 15px 0;
+}
+
+.number-people div:last-child {
+    border: none;
+}
+
+.number-btn {
+    display: flex;
+    align-items: center;
+}
+
+.Hotel-Search .number-people .number-btn button {
+    width: 27px;
+    border-radius: .3em;
+    color: #029278;
+    background-color: white;
+    border: 1px solid #029278;
+    margin: auto 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.number-people .number-btn p {
+    width: 30px;
+    text-align: center;
+}
+
+.Hotel-Feature {
+    padding: 0 20px;
+}
+
+.hotel-feature-group {
+    margin: auto;
+    border-radius: .5em;
+}
+
+.hotel-feature-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.hotel-feature-card:last-child {
+    border-bottom: none;
+}
+
+.hotel-feature-pic {
+    width: 20%;
+}
+
+.hotel-feature-pic img {
+    width: 100%;
+}
+
+.hotel-feature-text {
+    width: 80%;
+    line-height: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.hotel-feature-text p {
+    font-size: 12px;
+    color: gray;
+}
+
+.Stay {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.stay-group {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    align-items: center;
+    background-color: #dbf3ea;
+    border-radius: 1em;
+}
+
+.stay-content {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.stay-icon img {
+    width: 50%;
+    margin: 5px ;
+}
+
+.stay-pic {
+    width: 40%;
+}
+
+.stay-pic img {
+    width: 100%;
+}
+
+.Hotel-Discount {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.hotel-discount-group {
+    margin: auto;
+}
+
+.hotel-discount-pic {
+    /* width: 100px; */
+    margin: 10px 0;
+}
+
+.hotel-discount-pic img {
+    width: 100%;
+    border-radius: .5em;
+}
+
+.Question {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.Question .accordion-item:not(.collapsed) .accordion-button {
+    background-color: transparent ;
+    color: inherit ; 
+    box-shadow: none;
+}
+
+
+.question-group {
+    border-radius: .5em;
+    box-shadow: 0px 5px 10px 5px rgb(215, 215, 215);
+}
+
+.Question .accordion-button {
+    font-size: 14px;
+    /* margin-top: -25px; */
+}
+
+.Question .accordion-body li {
+    list-style: decimal;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+#accordionFlushExample {
+    width: 90%;
+    margin: auto;
+}
+
+.more {
+    outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: .3em;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.more:hover{
+    color: #029278;
+    background-color: #dbf3ea;
+    outline: 0;
+    transition: .5s;
+}
+
+.Popular {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.popular-group ul {
+    padding-left: 10px;
+}
+
+.popular-group a {
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    border-right: .5px solid rgb(220, 220, 220);
+    padding: 0 10px;
+    text-decoration: none;
+    color: gray;
+    margin-left: -4px;
+}
+
+.popular-group a:nth-last-child(1) {
+    border-right: 0px;
+}
+
+.popular-group h3 {
+    margin-left: 10px;
+}
+
+@media screen and (min-width:1200px) {
+    h2 {
+        font-size: 28px;
+        margin: 50px 0 20px 0px;
+        font-weight: 700; 
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .HotelPage {
+        width: 1200px;
+        /* outline: 1px solid black; */
+        top: -65px;
+    }
+
+    .Banner {
+        background-image: url(https://picsum.photos/300/200/?random=10);
+        height: 320px;
+    }
+
+    .Banner h1 {
+        font-size: 64px;
+        padding-left: 145px;
+    }
+
+    .Banner p {
+        display: initial;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 0 0 65px 150px;
+        line-height: 50px;
+    }
+
+    .Hotel-Search {
+        padding: 0
+    }
+
+    .hotel-Search-group {
+        display: flex;
+        border-radius: 2em;
+        position: relative;
+        top: 8px;
+    }
+
+    .Hotel-Search .hotel-Search-group label {
+        width: 70%;
+        border-radius: 1em;
+        margin: 0px 10px;
+    }
+
+    .Hotel-Search .hotel-Search-group p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .Hotel-Search .hotel-Search-group .search-p {
+        font-size: 14px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
+    .Hotel-Search .search-btn {
+        width: 20%;
+        margin: auto;
+        border-radius: 1em;
+        background-color: #029278;
+        padding: 3px 0;
+    }
+
+    .Hotel-Search .search-btn button {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .popular-destination {
+        position: absolute;
+        bottom: -105px;
+        left: 30px;
+        background-color: white;
+        width: 30%;
+        box-shadow: 0px 5px 10px 5px rgb(215, 215, 215);
+    }
+
+    .popular-destination button {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .number-people {
+        position: absolute;
+        top: 95px;
+        right: 100px;
+        background-color: white;
+        width: 30%;
+        box-shadow: 0px 5px 10px 5px rgb(215, 215, 215);
+    }
+
+    .Hotel-Feature {
+        padding: 0;
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    
+    .hotel-feature-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotel-feature-group .hotel-feature-card{
+        width: 100%;
+    }
+    
+    .hotel-feature-text p {
+        font-size: 14px;
+    }
+
+    .Stay, .Hotel-Discount, .Question, .Popular {
+        padding: 0;
+        margin-top: 50px;
+    }
+    
+    .stay-group {
+        font-size: 18px;
+        justify-content: space-between;
+    }
+    
+    .stay-content {
+        width: 60%;
+        padding-left: 30px;
+    }
+    
+    .stay-icon img {
+        width: 20%;
+    }
+    
+    .stay-pic {
+        width: 15%;
+    }
+    
+    .Hotel-Discount {
+        padding: 0;
+        margin-top: 50px;
+    }
+    
+    .hotel-discount-group {
+        display: flex;
+    }
+    
+    .hotel-discount-pic {
+        width: 30%;
+        margin: auto;
+
+    }
+    
+    .hotel-discount-pic img {
+        border-radius: 1em;
+    }
+    
+    .Question .accordion-button {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .Question .accordion-body li {
+        font-size: 14px;
+    }
+    
+    #accordionFlushExample {
+        width: 99%;
+    }
+    
+    .more {
+        width: 300px;
+        margin: 50px auto 0 auto; 
+        padding: 10px 0;
+        font-size: 16px;
+        border-radius: .5em;
+    }
+
+    .popular-group ul {
+        padding-left: 20px;
+    }
+    
+    .popular-group a {
+        font-size: 14px;
+    }
+
+}
